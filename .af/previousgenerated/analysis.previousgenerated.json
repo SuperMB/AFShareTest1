@@ -1,0 +1,60 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import arcticfox ",
+            "Existing": "import arcticfox "
+        }
+    ],
+    "243905772113424913": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.projectpath('analysis.py') ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.projectpath('analysis.py') "
+        }
+    ],
+    "013905772113424913": [
+        {
+            "PreviouslyGenerated": "print(df.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(df.astype(str).fillna('').head()) #)1 "
+        }
+    ],
+    "243905640460184913": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('analysis.py') ",
+            "Existing": "arcticfox.projectpath('analysis.py') "
+        }
+    ],
+    "013905640460184913": [
+        {
+            "PreviouslyGenerated": "print(fastest_dogs) #)1 ",
+            "Existing": "print(fastest_dogs) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(fastest_dogs) #)2 ",
+            "Existing": "print(fastest_dogs) #)2 "
+        }
+    ],
+    "013905212315934913": [
+        {
+            "PreviouslyGenerated": "#***SortedGroupMean: Calculates the mean of a specified value column grouped by another column and sorts the result in descending order.\n#***\n#***Specify the group column and the value column you want to calculate the average on.\n#***- Add required group and value column #> `select --groupColumn ? --valueColumn ? --guideStep <x>",
+            "Existing": "#***SortedGroupMean: Calculates the mean of a specified value column grouped by another column and sorts the result in descending order.\n#***\n#***Specify the group column and the value column you want to calculate the average on.\n#***- Add required group and value column #> `select --groupColumn ? --valueColumn ? --guideStep <x>"
+        },
+        {
+            "PreviouslyGenerated": "#****** --groupColumn ? ***\n#***The column to group by when calculating the average.\n#***- Example: --groupColumn breed\n#***\n#****** --valueColumn ? ***\n#***The column whose mean will be calculated for each group.\n#***- Example: --valueColumn top_speed_mph ",
+            "Existing": "#****** --groupColumn ? ***\n#***The column to group by when calculating the average.\n#***- Example: --groupColumn breed\n#***\n#****** --valueColumn ? ***\n#***The column whose mean will be calculated for each group.\n#***- Example: --valueColumn top_speed_mph "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False) ",
+            "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False) "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)1 ",
+            "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)1 "
+        }
+    ],
+    "243905212315934913": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('analysis.py') ",
+            "Existing": "arcticfox.projectpath('analysis.py') "
+        }
+    ]
+}

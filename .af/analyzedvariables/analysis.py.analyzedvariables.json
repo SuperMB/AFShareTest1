@@ -1,0 +1,110 @@
+{
+    "variables": {
+        "df": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                }
+            ]
+        },
+        "avg_speed": {
+            "type": "numpy.float64"
+        },
+        "avg_speed_by_breed": {
+            "type": "pandas.core.series.Series"
+        },
+        "fastest_dogs": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                }
+            ]
+        },
+        "age_speed": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                }
+            ]
+        },
+        "senior_dogs": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                }
+            ]
+        },
+        "very_fast": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                }
+            ]
+        },
+        "avgByGroup": {
+            "type": "pandas.core.series.Series"
+        }
+    }
+}
