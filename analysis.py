@@ -108,6 +108,11 @@ print(avgByGroup_1) #)4
 ##*** Saluki                  5.869565
 ##*** Name: age, dtype: float64
 
+#> SortedGroupMean --groupColumn age --valueColumn top_speed_mph --print 
+avgByGroup_2 = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)
+print('HOWDY THERE!')
+print(avgByGroup_2) #)5 
+
 
 print("\nAverage top speed by breed:")
 print(avg_speed_by_breed)
@@ -117,7 +122,7 @@ fastest_dogs = df.sort_values("top_speed_mph", ascending=False).head(10)
 
 print("\nTop 10 fastest dogs:")
 #> print fastest_dogs 
-print(fastest_dogs) #)5 
+print(fastest_dogs) #)6 
 ##***             name  age      breed  top_speed_mph
 ##*** 404    Ruby Hope    5  Greyhound           44.8
 ##*** 233  Clover Hope    0  Greyhound           44.7
