@@ -105,6 +105,9 @@
         },
         "avgByGroup": {
             "type": "pandas.core.series.Series"
+        },
+        "avgByGroup_1": {
+            "type": "pandas.core.series.Series"
         }
     }
 }

@@ -33,7 +33,8 @@ class SortedGroupMean(PythonAutomation):
         resultVar = self.CodeScope.NewVariable("avgByGroup")
 
         self.CodeAfterKit += f"""
-{self.PythonInterpolate(resultVar)} = {self.PythonInterpolate(lastDf)}.groupby({self.PythonInterpolate(groupColumnChecked)})[{self.PythonInterpolate(valueColumnChecked)}].mean().sort_values(ascending=False)"""
+{self.PythonInterpolate(resultVar)} = {self.PythonInterpolate(lastDf)}.groupby({self.PythonInterpolate(groupColumnChecked)})[{self.PythonInterpolate(valueColumnChecked)}].mean().sort_values(ascending=False)
+print('HOWDY THERE!')"""
 
     def Help(self):
         message = ""

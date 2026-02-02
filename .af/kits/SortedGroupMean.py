@@ -42,3 +42,4 @@ resultVar = CodeScope.NewVariable("avgByGroup")
 
 with CodeAfterKit:
     ((resultVar)) = ((lastDf)).groupby(((groupColumnChecked)))[((valueColumnChecked))].mean().sort_values(ascending=False)
+    print('HOWDY THERE!')

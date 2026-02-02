@@ -1,6 +1,8 @@
 import pandas as pd
  
 import arcticfox  
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None)
 arcticfox.projectpath('analysis.py') 
 
 # Load dataset
@@ -29,6 +31,15 @@ print(df["breed"].value_counts())
 print("\nAge distribution:")
 print(df["age"].value_counts().sort_index())
 
+#> View 
+print(df.astype(str).fillna('').head()) #)1 
+##***            name age                breed top_speed_mph
+##*** 0    Otis Blake   6           Great Dane          24.8
+##*** 1    Piper Reed  12  Australian Shepherd          22.1
+##*** 2  Tucker Grace  15      Standard Poodle          29.1
+##*** 3     Hazel Ray   0           Great Dane          21.2
+##*** 4    Theo Grace   3     Golden Retriever          25.5
+
 
 # -------------------------
 # Speed analysis
@@ -47,7 +58,8 @@ avg_speed_by_breed = (
 
 #> SortedGroupMean --groupColumn age --valueColumn top_speed_mph --print 
 avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)
-print(avgByGroup) #)1 
+print('HOWDY THERE!')
+print(avgByGroup) #)3 
 ##*** age
 ##*** 7     29.748276
 ##*** 5     28.838235
@@ -68,6 +80,33 @@ print(avgByGroup) #)1
 ##*** Name: top_speed_mph, dtype: float64
 
 
+#> SortedGroupMean --groupColumn breed --valueColumn age --print 
+avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)
+print('HOWDY THERE!')
+print(avgByGroup_1) #)4 
+##*** breed
+##*** Whippet                 8.241379
+##*** Afghan Hound            8.100000
+##*** German Shepherd         8.074074
+##*** Siberian Husky          8.060606
+##*** Australian Shepherd     7.772727
+##*** Weimaraner              7.560000
+##*** Greyhound               7.450000
+##*** Boxer                   7.448276
+##*** Vizsla                  7.437500
+##*** Great Dane              7.264706
+##*** Labrador Retriever      7.238095
+##*** Border Collie           7.210526
+##*** Standard Poodle         7.103448
+##*** Jack Russell Terrier    7.076923
+##*** Doberman Pinscher       7.032258
+##*** Dalmatian               6.960000
+##*** Golden Retriever        6.862069
+##*** Rhodesian Ridgeback     6.588235
+##*** Belgian Malinois        6.560000
+##*** Saluki                  5.869565
+##*** Name: age, dtype: float64
+
 
 print("\nAverage top speed by breed:")
 print(avg_speed_by_breed)
@@ -77,7 +116,7 @@ fastest_dogs = df.sort_values("top_speed_mph", ascending=False).head(10)
 
 print("\nTop 10 fastest dogs:")
 #> print fastest_dogs 
-print(fastest_dogs) #)2 
+print(fastest_dogs) #)5 
 ##***             name  age      breed  top_speed_mph
 ##*** 404    Ruby Hope    5  Greyhound           44.8
 ##*** 233  Clover Hope    0  Greyhound           44.7

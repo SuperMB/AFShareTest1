@@ -31,6 +31,18 @@
         {
             "PreviouslyGenerated": "print(fastest_dogs) #)2 ",
             "Existing": "print(fastest_dogs) #)2 "
+        },
+        {
+            "PreviouslyGenerated": "print(fastest_dogs) #)3 ",
+            "Existing": "print(fastest_dogs) #)3 "
+        },
+        {
+            "PreviouslyGenerated": "print(fastest_dogs) #)4 ",
+            "Existing": "print(fastest_dogs) #)4 "
+        },
+        {
+            "PreviouslyGenerated": "print(fastest_dogs) #)5 ",
+            "Existing": "print(fastest_dogs) #)5 "
         }
     ],
     "013905212315934913": [
@@ -49,12 +61,54 @@
         {
             "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)1 ",
             "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)3 ",
+            "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)3 "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup) #)3 ",
+            "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup) #)3 "
         }
     ],
     "243905212315934913": [
         {
             "PreviouslyGenerated": "arcticfox.projectpath('analysis.py') ",
             "Existing": "arcticfox.projectpath('analysis.py') "
+        }
+    ],
+    "243905516429734913": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.projectpath('analysis.py') ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.projectpath('analysis.py') "
+        }
+    ],
+    "013905516429734913": [
+        {
+            "PreviouslyGenerated": "print(df.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(df.astype(str).fillna('').head()) #)1 "
+        }
+    ],
+    "013905811817564913": [
+        {
+            "PreviouslyGenerated": "#***SortedGroupMean: Calculates the mean of a specified value column grouped by another column and sorts the result in descending order.\n#***\n#***Specify the group column and the value column you want to calculate the average on.\n#***- Add required group and value column #> `select --groupColumn ? --valueColumn ? --guideStep <x>",
+            "Existing": "#***SortedGroupMean: Calculates the mean of a specified value column grouped by another column and sorts the result in descending order.\n#***\n#***Specify the group column and the value column you want to calculate the average on.\n#***- Add required group and value column #> `select --groupColumn ? --valueColumn ? --guideStep <x>"
+        },
+        {
+            "PreviouslyGenerated": "#****** --groupColumn ? ***\n#***The column to group by when calculating the average.\n#***- Example: --groupColumn breed\n#***\n#****** --valueColumn ? ***\n#***The column whose mean will be calculated for each group.\n#***- Example: --valueColumn top_speed_mph ",
+            "Existing": "#****** --groupColumn ? ***\n#***The column to group by when calculating the average.\n#***- Example: --groupColumn breed\n#***\n#****** --valueColumn ? ***\n#***The column whose mean will be calculated for each group.\n#***- Example: --valueColumn top_speed_mph "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False) ",
+            "Existing": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False) "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint(avgByGroup_1) #)4 ",
+            "Existing": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint(avgByGroup_1) #)4 "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_1) #)4 ",
+            "Existing": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_1) #)4 "
         }
     ]
 }
