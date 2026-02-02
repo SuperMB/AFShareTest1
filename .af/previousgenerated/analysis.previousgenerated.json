@@ -41,6 +41,10 @@
             "Existing": "print(fastest_dogs) #)4 "
         },
         {
+            "PreviouslyGenerated": "print(fastest_dogs) #)6 ",
+            "Existing": "print(fastest_dogs) #)6 "
+        },
+        {
             "PreviouslyGenerated": "print(fastest_dogs) #)5 ",
             "Existing": "print(fastest_dogs) #)5 "
         }
@@ -65,6 +69,10 @@
         {
             "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)3 ",
             "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint(avgByGroup) #)3 "
+        },
+        {
+            "PreviouslyGenerated": "avgByGroup_1 = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_1) #)4 ",
+            "Existing": "avgByGroup_1 = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_1) #)4 "
         },
         {
             "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup) #)3 ",
@@ -107,8 +115,18 @@
             "Existing": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint(avgByGroup_1) #)4 "
         },
         {
+            "PreviouslyGenerated": "avgByGroup_2 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_2) #)5 ",
+            "Existing": "avgByGroup_2 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_2) #)5 "
+        },
+        {
             "PreviouslyGenerated": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_1) #)4 ",
             "Existing": "avgByGroup_1 = df.groupby('breed')['age'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup_1) #)4 "
+        }
+    ],
+    "013905367440464913": [
+        {
+            "PreviouslyGenerated": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup) #)3 ",
+            "Existing": "avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)\nprint('HOWDY THERE!')\nprint(avgByGroup) #)3 "
         }
     ]
 }

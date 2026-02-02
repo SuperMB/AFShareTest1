@@ -56,6 +56,7 @@ avg_speed_by_breed = (
       .sort_values(ascending=False)
 )
 
+
 #> SortedGroupMean --groupColumn age --valueColumn top_speed_mph --print 
 avgByGroup = df.groupby('age')['top_speed_mph'].mean().sort_values(ascending=False)
 print('HOWDY THERE!')
